@@ -1,9 +1,9 @@
 {
-  "name": "sassdoc-theme-default",
+  "name": "sassdoc-theme-default-next",
   "description": "SassDoc's default theme",
   "title": "SassDoc Default Theme",
   "author": "SassDoc team",
-  "version": "2.8.5",
+  "version": "3.0.0",
   "keywords": [
     "sassdoc-theme"
   ],
