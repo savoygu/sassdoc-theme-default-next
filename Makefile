@@ -9,11 +9,11 @@ publish: lint dist
 	npm publish
 
 lint:
-	standard $(SOURCES)
+	npx standard $(SOURCES)
 
 dist:
 	rm -rf $@
-	babel src -d $@
+	npx babel src -d $@
 
 min: assets/js/main.min.js
 
@@ -26,10 +26,10 @@ assets/js/main.min.js: \
 	cat $^ | uglifyjs > $@
 
 sass:
-	node-sass --output-style compressed scss -o assets/css
+	npx node-sass --output-style compressed scss -o assets/css
 
 sass-dev:
-	node-sass scss -o assets/css --sourcemap=inline
+	npx node-sass scss -o assets/css --sourcemap=inline
 
 clean:
 	rm -rf $(DIST) assets/js/main.min.js assets/css
